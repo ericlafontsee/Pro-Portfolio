@@ -1,0 +1,28 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: linear-gradient(to bottom, #556270, #332179);
+  clip-path: polygon(100% 0%, 120% 100%, 0% 100%, 0% 50%);
+}
+.eric {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.ficon,
+p {
+  text-align: center;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  color: white;
+  padding: 5px;
+  font-size: 40px;
+}

@@ -1,0 +1,8 @@
+h1 {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 249, 249);
+  height: 200px;
+  background: linear-gradient(to bottom, #556270, #332179);
+  clip-path: polygon(0% 0%, 150% 0%, 0% 90%, 0% 100%);
+}
