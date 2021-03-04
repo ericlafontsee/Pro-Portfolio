@@ -1,0 +1,23 @@
+html {
+  background: white;
+}
+
+html:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 1000px);
+  left: 0;
+  width: 500px;
+  height:2000px;
+  background: #556270;
+  transform: skew(-15deg);
+  transform-origin:top;
+}
+body {
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
