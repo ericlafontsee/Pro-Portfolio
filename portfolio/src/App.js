@@ -2,13 +2,13 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import Main from "./components/Main";
+import About from "./pages/About";
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
+      <About /> 
       <Footer />
       <Contact />
     </>
