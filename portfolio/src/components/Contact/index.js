@@ -1,5 +1,5 @@
 import "./style.css";
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { Keyframes, config } from "react-spring/renderprops";
 import { Input } from "antd";
 import delay from "delay";
@@ -22,7 +22,6 @@ const items = [
     content: <Input size="medium" placeholder="Message" />,
   }
 
-  
 ];
 
 const Menu = Keyframes.Spring({
@@ -57,14 +56,13 @@ const MenuItems = Keyframes.Trail({
 
 function Contact() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const handleBtnClick = () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
     <div className="App">
-      <button onClick={handleBtnClick}>☰</button>
+      <button onClick={handleBtnClick}>Contact</button>
 
       <Menu config={config.gentle} unique state={menuOpen ? "in" : "out"}>
         {(props) => (
@@ -77,7 +75,7 @@ function Contact() {
                 reverse={!menuOpen}
               >
                 {(trailitem) => (trailprops) => (
-                  <div style={trailprops}>{trailitem.content}</div>
+                <div className="contactForm" style={trailprops}>{trailitem.content}</div>
                 )}
               </MenuItems>
             </form>

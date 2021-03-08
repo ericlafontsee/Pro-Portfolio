@@ -1,47 +1,41 @@
-.sidebar {
-  position: relative;
-  overflow: hidden;
+.App {
+  font-family: sans-serif;
+  text-align: right;
   height: 100%;
-  width: 280px;
-  background: white;
-  padding: 20px;
-  font-size: 15px;
-}
-
-.sidebar-toggle {
+  max-width: 500px;
   position: absolute;
-  margin: 20px;
-  color: #a0a0a0;
-  z-index: 100;
-  font-size: 1.5em;
+  top: 5px;
+  right: 5px;
+}
+
+.contactForm{
+  background: gray;
+}
+
+form {
+  width: 200px;
+  padding: 10px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  height: 20px;
+  border: none;
+  width: 100px;
+  font-size: 20px;
+  line-height: 1;
   cursor: pointer;
+  color: white;
+  background:none;
 }
 
-.login-form-forgot {
-  float: right;
+button:active {
+ color: rgba(255, 255, 255, 0.8);
 }
-
-.login-form-button {
-  width: 100%;
-}
-
-.ant-avatar {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 3em !important;
-}
-
-.middle .ant-form-item-control {
-  display: flex;
-  justify-content: center;
-}
-
-.sidebar .ant-form-item {
-  margin: 0;
-}
-
-.sidebar .ant-form-item-control {
-  line-height: 29px;
+button:hover {
+  color: rgba(0, 0, 0, 0.3);
 }
