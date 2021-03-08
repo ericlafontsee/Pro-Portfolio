@@ -1,98 +1,90 @@
-import {config } from 'react-spring';
-import delay from 'delay';
-import ReactPlaceholder from 'react-placeholder';
-import React, { useState } from "react";
-import { Keyframes } from "react-spring/renderprops";
-import './style.css';
+import "./style.css";
+import React, { Fragment, useState } from "react";
+import { Keyframes, config } from "react-spring/renderprops";
+import { Input } from "antd";
+import delay from "delay";
 
 const items = [
   {
     key: 1,
-    content: <ReactPlaceholder type="media" rows={2} />,
+    content: <Input size="medium" placeholder="Name" />
   },
   {
     key: 2,
-    content: 'Home',
+    content: <Input size="medium" placeholder="Phone" />
   },
   {
     key: 3,
-    content: 'Favourites',
+    content: <Input size="medium" placeholder="Email" />,
   },
   {
     key: 4,
-    content: 'Sign out',
-  },
+    content: <Input size="medium" placeholder="Message" />,
+  }
+
+  
 ];
 
 const Menu = Keyframes.Spring({
-  in: async next => {
+  in: async (next) => {
     await next({
-      transform: 'translateX(0%)',
+      transform: "translateX(0%)"
     });
   },
-  out: async next => {
+  out: async (next) => {
     await delay(700);
     await next({
-      transform: 'translateX(-100%)',
+      transform: "translateX(-100%)"
     });
-  },
+  }
 });
 
 const MenuItems = Keyframes.Trail({
-  in: async next => {
+  in: async (next) => {
     await delay(600);
     await next({
       opacity: 1,
-      transform: 'translateX(0px)',
+      transform: "translateX(0px)"
     });
   },
-  out: async next => {
+  out: async (next) => {
     await next({
       opacity: 0,
-      transform: 'translateX(-40px)',
+      transform: "translateX(-40px)"
     });
-  },
+  }
 });
 
 function Contact() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-
   const handleBtnClick = () => {
-setMenuOpen(!menuOpen);
-     
+    setMenuOpen(!menuOpen);
   };
 
-
   return (
-      <>
-      <div className="App">
-        <button onClick={handleBtnClick}>☰</button>
+    <div className="App">
+      <button onClick={handleBtnClick}>☰</button>
 
-        <Menu
-          config={config.gentle}
-          unique
-          state={menuOpen ? 'in' : 'out'}
-        >
-          {props => (
-            <nav style={props}>
-              <ul>
-                <MenuItems
-                  keys={item => item.key}
-                  items={items}
-                  state={menuOpen ? 'in' : 'out'}
-                  reverse={menuOpen}
-                >
-                  {trailitem => trailprops => (
-                    <li style={trailprops}>{trailitem.content}</li>
-                  )}
-                </MenuItems>
-              </ul>
-            </nav>
-          )}
-        </Menu>
-      </div>
-    </>
+      <Menu config={config.gentle} unique state={menuOpen ? "in" : "out"}>
+        {(props) => (
+          <nav style={props}>
+            <form>
+              <MenuItems
+                keys={(item) => item.key}
+                items={items}
+                state={menuOpen ? "in" : "out"}
+                reverse={!menuOpen}
+              >
+                {(trailitem) => (trailprops) => (
+                  <div style={trailprops}>{trailitem.content}</div>
+                )}
+              </MenuItems>
+            </form>
+          </nav>
+        )}
+      </Menu>
+    </div>
   );
 }
 
