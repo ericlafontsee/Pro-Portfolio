@@ -1,28 +1,62 @@
+// Gradients taken from: https://webgradients.com/
 export default [
   {
-    name: "ABOUT",
-    image: process.env.PUBLIC_URL + "/images/professional_pic.png",
+    id: 1,
+    name: "Downshift",
+    image: "/images/downshift.png",
     description:
-      "Full stack web developer with a background in the music business. Successfully managed tours for a Sony artist providing support for national acts like Lynyrd Skynyrd. Known for my time management skills and discipline, I taught myself XML languages and got offered a job as junior programmer at a technical publications company. Recently earned a certificate in Full Stack Web Development from Vanderbilt University learning HTML, CSS, and JavaScript. Motivated to work with a team invested in developing cutting-edge web applications. My determination combined with diligence makes me a reliable and successful team member.",
-    css: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)",
-    height: 100
+      "Application allows the user to schedule break times. An alarm sounds on break and presents the user with a mini game that will suggest a productive activity. Project was built with the MERN stack, Passport.js, and React-Timekeeper.",
+    GitHub: "https://github.com/millerrich/downshift-v2",
+    Deployed: "https://glacial-wildwood-12509.herokuapp.com/"
+  },
+
+  {
+    id: 5,
+    name: "Google Book Search",
+    image: "/images/google-book-search.png",
+    description:
+      "Application allows the user to search Google books. The results will display and the user can either view the book on Google or save the book to the database. Project was built with the MERN stack and Bootstrap.",
+    GitHub: "https://github.com/ericlafontsee/Google-Books-Search",
+    Deployed: "https://murmuring-woodland-11280.herokuapp.com/"
   },
   {
-    name: "PROJECTS",
-    description: "#f5f7fa → #c3cfe2",
-    css: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
-    height: 200
+    id: 2,
+    name: "Team Profile Generator",
+    image: "/images/team-profile-generator.png",
+    description:
+      "CLI application allows users to enter employees by role. The app will create an HTML file that displays the team's roster. Project was built with Node, JavaScript, BootStrap, and utilizes the jest module for testing the code.",
+    GitHub: "https://github.com/ericlafontsee/Team-Profile-Generator",
+    Deployed:
+      "https://drive.google.com/file/d/1FAkVv5czBKA5EqCrOKxXFto6FAjKJssY/view"
   },
   {
-    name: "RESUME",
-    description: "#e0c3fc → #8ec5fc",
-    css: "linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)",
-    height: 200
+    id: 4,
+    name: "Employee Tracker",
+    image: "/images/employee-tracker.png",
+    description:
+      "CLI application that can manage a company's employees. This Content Management System allows the user to view, add, delete, and update departments, roles, and employees. Project was built with Node, JavaScript, and MySQL.",
+    GitHub: "https://github.com/ericlafontsee/Employee-Tracker",
+    Deployed:
+      "https://drive.google.com/file/d/1bwvdGhdnEXA_C8qCx2j2WkBCmHRg0gyG/view"
   },
+
   {
-    name: "Ripe Malinka",
-    description: "#f093fb → #f5576c",
-    css: "linear-gradient(120deg, #f093fb 0%, #f5576c 100%)",
-    height: 200
+    id: 3,
+    name: "Weather DashBoard",
+    image: "/images/weather-dashboard.png",
+    description:
+      "Weather application using the Open Weather Map API. Users can input any city of their choosing. The page will populate with the current weather as well as a 5-day forecast. Project was built with Bootstrap, jQuery, and the Open Weather Map API.",
+    GitHub: "https://github.com/ericlafontsee/Weather-Dashboard",
+    Deployed: "https://ericlafontsee.github.io/Weather-Dashboard/"
+  },
+
+  {
+    id: 5,
+    name: "Code Quiz",
+    image: "/images/code-quiz.png",
+    description:
+      "Application is a timed quiz focusing on questions about JavaScript. The user can save their high scores to local storage. Project was built with JavaScript, Bootstrap, and utilizes local storage.",
+    GitHub: "https://github.com/ericlafontsee/Homework-CodeQuiz",
+    Deployed: "https://ericlafontsee.github.io/Homework-CodeQuiz/"
   }
 ];

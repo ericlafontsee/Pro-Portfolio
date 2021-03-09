@@ -1,5 +1,5 @@
-import { animated } from 'react-spring'
-import styled, { createGlobalStyle } from 'styled-components'
+import { animated } from "react-spring";
+import styled, { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
   * {
@@ -21,10 +21,10 @@ const Global = createGlobalStyle`
     align-items: center;
     justify-content: center;
   }
-`
+`;
 
 const Container = styled(animated.div)`
-margin: 0 auto;
+  margin: 0 auto;
   position: relative;
   max-width: 1000px;
   display: grid;
@@ -34,8 +34,7 @@ margin: 0 auto;
   cursor: pointer;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
   will-change: width, height;
-
-`
+`;
 
 const Item = styled(animated.div)`
   width: 100%;
@@ -43,6 +42,6 @@ const Item = styled(animated.div)`
   display: flex;
   border-radius: 5px;
   will-change: transform, opacity;
-`
+`;
 
-export { Global, Container, Item }
+export { Global, Container, Item };

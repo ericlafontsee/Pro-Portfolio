@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useTransition, useSpring, useChain, config } from 'react-spring';
-import { Global, Container, Item } from './styles';
+import { Container, Item } from './styles';
 import data from './data';
 import "./style.css";
 
@@ -34,7 +34,7 @@ export default function App() {
       <Container style={{ ...rest, width: size, height: size }} onClick={() => set(open => !open)}>
         {transitions.map(({ item, key, props }) => (
           <Item key={key} style={{ ...props, background: item.css }}>
-            <img src={item.image} alt="Eric LaFontsee's Profile Picture"/>
+            <img id="propic" src={item.image} alt="Eric LaFontsee's Profile Picture"/>
             <div id='description'>{item.description}</div>
           </Item>
         ))}
