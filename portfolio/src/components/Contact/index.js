@@ -61,7 +61,7 @@ function Contact() {
   };
 
   return (
-    <div className="App">
+    <div className="Contact">
       <button onClick={handleBtnClick}>Contact</button>
 
       <Menu config={config.gentle} unique state={menuOpen ? "in" : "out"}>

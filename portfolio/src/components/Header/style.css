@@ -1,8 +1,18 @@
+header#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #556270;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 h1 {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   color: rgb(255, 249, 249);
-  height: 200px;
-  background: linear-gradient(to bottom, #556270, #332179);
-  clip-path: polygon(0% 0%, 150% 0%, 0% 90%, 0% 100%);
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }

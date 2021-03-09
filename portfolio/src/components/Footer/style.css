@@ -3,12 +3,8 @@
   bottom: 0;
   width: 100%;
   height: 200px;
-  margin: 0;
-  padding: 0;
-  color: white;
   background: linear-gradient(to bottom, #556270, #332179);
   clip-path: polygon(100% 0%, 120% 100%, 0% 100%, 0% 50%);
-  z-index: 1;
 }
 .eric {
   padding: 0;

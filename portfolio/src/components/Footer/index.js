@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <footer className="text-center text-light footer">
+    <footer className="footer">
       <p className="eric" >&copy; 2020 Eric LaFontsee</p>
       <a
         href="https://www.instagram.com/eric_lafontsee/?hl=en"

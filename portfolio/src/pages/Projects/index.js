@@ -8,14 +8,14 @@ import "./style.css";
 export default function App() {
   const [open, setOpen] = useState(false);
 
-  const expand = open ? 'CLOSE' : "PROJECTS";
+  const expand = open ? 'X' : "My Work";
 
   const springRef = useRef();
   const { size, opacity, ...rest } = useSpring({
     ref: springRef,
     config: config.stiff,
-    from: { size: "20%", background: "hotpink" },
-    to: { size: open ? "100%" : "20%", background: open ? "white" : "hotpink" }
+    from: { size: "5%", background: "black" },
+    to: { size: open ? "100%" : "5%", background: open ? "rgba(0,0,0,0.6)" : "black" }
   });
 
   const transRef = useRef();
@@ -40,14 +40,13 @@ export default function App() {
         <Container
           style={{ ...rest, width: size, height: size }}
         >
-          <div
-              style={{ background: "black", color: "white", height: '100px', width: '100px' }}
+          <button
+              style={{ background: "black", color: "white", maxWidth: "200px", zIndex: 134}}
               onClick={() => setOpen((open) => !open)}
-            >{expand}</div>
+            >{expand}</button>
           {transitions.map(({ item, key, props }) => (
             <Item key={key} style={{ ...props, background: item.css }}>
-              {/* <img id="projectPic"src={item.image}/> */}
-              <Card />
+              <Card  {...item} />
             </Item>
           ))}
         </Container>

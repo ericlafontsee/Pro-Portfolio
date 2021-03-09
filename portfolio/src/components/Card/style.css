@@ -20,6 +20,7 @@ body,
 
 .c {
   position: absolute;
+  display: flex;
   max-width: 500px;
   max-height: 500px;
   width: 50ch;
@@ -28,15 +29,56 @@ body,
   will-change: transform, opacity;
 }
 
-.front,
-.back {
-  background-size: cover;
+#backImg {
+    border: 2px solid #556270;
+    border-radius: 2%;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
-.back {
-  background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
+#appName{
+text-align: center;
+height: 20px;
+width: 100%;
+margin: 0 auto;
 }
 
-.front {
+#appDesc{
+    color: black;
+    font-size: 15pt;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+}
+a{
+    align-self: flex-end;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#github{
+    color: black;
+    border: 2px outset #556270;
+    border-radius: 2%;
+    min-height: 50px;
+    min-width: 100px;
+  
+}
+#deployed{
+    color: black;
+    border: 2px solid #556270;
+    border-radius: 2%;
+    min-height: 50px;
+    min-width: 100px;
+
+}
+
+
+/* .front {
   background-image: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80&auto=format&fit=crop);
-}
+} */
