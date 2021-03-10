@@ -2,8 +2,8 @@ header#header {
   position: absolute;
   top: 0;
   left: 0;
-  background: #556270;
-  height: 100px;
+  background: rgba(0,0,0,0);
+  height: 80px;
   width: 100%;
   margin-bottom: 20px;
 }

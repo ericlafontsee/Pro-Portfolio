@@ -1,7 +1,4 @@
 #about {
-  margin-top: 100px;
-  padding: 0;
-  display: flex;
   background: linear-gradient(to bottom, #556270, #332179);
   /* clip-path: polygon(0% 0%, 300% 0%, 0% 70%, 0% 100%); */
 }
@@ -16,27 +13,21 @@ div#about::after {
 }
 
 
-#propic {
+.propic {
   border: 2px solid #556270;
   border-radius: 50%;
-  margin: 10px;
-  max-width: 400px;
-  max-height: 400px;
-  width: 20%;
+  margin: 0 auto;
+  max-width: 100%;
   height: auto;
-  align-self: center;
-  position: absolute;
-  top: 100px;
-  right: 100px;
 }
 
-#description {
+.bio {
   margin: 0 auto;
   font-size: 2vh;
   max-width: 800px;
   padding: 10px;
   align-self: center;
   color: white;
-  position: absolute;
-  top: 150px;
+  padding-top: 15px;
+  line-height: 200%;
 }

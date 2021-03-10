@@ -5,17 +5,34 @@ import data from "./data";
 import Card from "../../components/Card";
 import "./style.css";
 
-export default function App() {
+export default function Projects() {
   const [open, setOpen] = useState(false);
 
-  const expand = open ? 'X' : "My Work";
+  const expand = open ? "X" : "My Work";
+
+  let topNum = 0;
+  let posType = "relative";
+  let leftNum = 0;
+  let w = "150px";
+  let h = "100px";
+
+  if (open) {
+    topNum = 0;
+    posType = "fixed";
+    leftNum = 0;
+    w = "100%";
+    h = "100%";
+  }
 
   const springRef = useRef();
   const { size, opacity, ...rest } = useSpring({
     ref: springRef,
     config: config.stiff,
-    from: { size: "5%", background: "black" },
-    to: { size: open ? "100%" : "5%", background: open ? "rgba(0,0,0,0.6)" : "black" }
+    from: { size: "20%", background: "black" },
+    to: {
+      size: open ? "100%" : "20%",
+      background: open ? "rgba(0,0,0,0.6)" : "black"
+    }
   });
 
   const transRef = useRef();
@@ -36,17 +53,28 @@ export default function App() {
 
   return (
     <>
-      <div id="projects">
-        <Container
-          style={{ ...rest, width: size, height: size }}
-        >
+      <div
+        id="projects"
+        style={{ top: topNum, position: posType, left: leftNum, width: w, height: h }}
+      >
+        <Container style={{ ...rest, width: size, height: size }} >
           <button
-              style={{ background: "black", color: "white", maxWidth: "200px", zIndex: 134}}
-              onClick={() => setOpen((open) => !open)}
-            >{expand}</button>
+            style={{
+              background: "black",
+              color: "white",
+              maxWidth: "200px",
+              zIndex: 134,
+              position: 'absolute',
+              top: 0,
+              left: 0
+            }}
+            onClick={() => setOpen((open) => !open)}
+          >
+            {expand}
+          </button>
           {transitions.map(({ item, key, props }) => (
-            <Item key={key} style={{ ...props, background: item.css }}>
-              <Card  {...item} />
+            <Item key={key} style={{ ...props }}>
+              <Card {...item} />
             </Item>
           ))}
         </Container>

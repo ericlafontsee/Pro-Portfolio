@@ -1,24 +1,14 @@
 #projects {
   margin: 0 auto;
   padding: 0;
-  height: 100%;
-  width: 80%;
-  overflow: hidden;
-  padding: 20px;
-  display: flex;
-  z-index: 2;
-}
+  z-index: 200;
 
+}
+/* 
 #projectPic {
   border: 2px solid #556270;
   border-radius: 2%;
   margin: 0;
   width: 100%;
   height: auto;
-}
-/* #description {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 10px;
-  align-self: center;
 } */

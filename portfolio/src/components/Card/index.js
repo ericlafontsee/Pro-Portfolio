@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import { useSpring, animated } from 'react-spring'
-import { Item } from '../../pages/Projects/styles';
 import './style.css'
 
 function Card(props) {
-  console.log('props', props);
   const backImg = props.image;
   const [flipped, set] = useState(false)
   const { transform, opacity } = useSpring({
@@ -14,9 +12,8 @@ function Card(props) {
   })
   return (
     <div id="card" onClick={() => set(state => !state)}>
-      <animated.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
-        <img id="backImg" src={backImg}/>
-      </animated.div>
+      <animated.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform,  backgroundImage: `url(${backImg})`}}/>
+      
       <animated.div className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
         <h3 id="appName">{props.name}</h3>
         <p id="appDesc">{props.description}</p>
