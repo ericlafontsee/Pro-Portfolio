@@ -1,27 +1,51 @@
-import React, { useState } from 'react'
-import { useSpring, animated } from 'react-spring'
+import React from 'react'
 import './style.css'
 
 function Card(props) {
-  const backImg = props.image;
-  const [flipped, set] = useState(false)
-  const { transform, opacity } = useSpring({
-    opacity: flipped ? 1 : 0,
-    transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 500, friction: 80 }
-  })
+
   return (
-    <div id="card" onClick={() => set(state => !state)}>
-      <animated.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform,  backgroundImage: `url(${backImg})`}}/>
-      
-      <animated.div className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
-        <h3 id="appName">{props.name}</h3>
-        <p id="appDesc">{props.description}</p>
-        <a href={props.GitHub} target="_blank"><button id='github'>Github</button></a>
-        <a href={props.Deployed} target="_blank"><button id='deployed'>Deployed</button></a>
-      </animated.div>
-    </div>
-  )
+        <div className="card mx-auto">
+        <a href={props.Deployed} target="_blank" rel="noopener noreferrer">
+          <img
+            className="img-thumbnail img-max-width"
+            variant="top"
+            src={process.env.PUBLIC_URL + props.image}
+            alt={props.name}
+          />
+        </a>
+        <div className="text-center pt-2">{props.name}</div>
+        <div className="mx-auto pb-5 text-center">
+          <div className="description">{props.description}</div>
+        </div>
+        <div className="mx-auto pb-5">
+          <button
+            className="btn m-1"
+            href={props.GitHub}
+            target="_blank"
+            style={{
+              background: "#556270",
+              border: "2px outset white ",
+              width: "150px"
+            }}
+          >
+            GitHub Repo
+          </button>
+          <button
+            className="btn m-1"
+            style={{
+              background: "#556270",
+              border: "2px outset white ",
+              width: "150px"
+            }}
+            href={props.Deployed}
+            target="_blank"
+          >
+            Deployed App
+          </button>
+        </div>
+      </div>
+    );
+  
 }
 
 export default Card;

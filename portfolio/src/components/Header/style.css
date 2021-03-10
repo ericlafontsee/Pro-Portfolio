@@ -1,18 +1,18 @@
 header#header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0);
-  height: 80px;
-  width: 100%;
-  margin-bottom: 20px;
+  background: linear-gradient(to bottom,#2e2e2c, #492527);
+  height: 85%;
+  position:fixed;
+  display:block;
+  width:110%;
+  clip-path: polygon(0% 0%, 250% 0%, 0% 70%, 0% 100%);
 }
+
 
 h1 {
   margin: 0;
   padding: 10px;
   color: rgb(255, 249, 249);
-  position: absolute;
-  top: 5px;
-  left: 5px;
+  /* position: absolute;
+  top: 5px; 
+  left: 5px; */
 }

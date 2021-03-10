@@ -2,7 +2,8 @@ import React, { useState, useRef } from "react";
 import { useTransition, useSpring, useChain, config } from "react-spring";
 import { Container, Item } from "./styles";
 import data from "./data";
-import Card from "../../components/Card";
+import Flipcard from "../../components/Flipcard";
+// import Card from "../../components/Card";
 import "./style.css";
 
 export default function Projects() {
@@ -62,7 +63,10 @@ export default function Projects() {
             style={{
               background: "black",
               color: "white",
-              maxWidth: "200px",
+              maxWidth: "100px",
+              maxHeight: "75px",
+              width: '100%',
+              height: '100%',
               zIndex: 134,
               position: 'absolute',
               top: 0,
@@ -74,7 +78,8 @@ export default function Projects() {
           </button>
           {transitions.map(({ item, key, props }) => (
             <Item key={key} style={{ ...props }}>
-              <Card {...item} />
+              <Flipcard {...item} />
+              {/* <Card {...item} /> */}
             </Item>
           ))}
         </Container>
