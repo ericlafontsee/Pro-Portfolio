@@ -5,10 +5,9 @@ import Projects from "../Projects";
 export default function About() {
   return (
     <>
-      <div id="about">
-        <div className="container-fluid">
+        <div  id="about" className="container-fluid">
           <div className="row">
-            <div className="col-md-3 bio">
+            <div className="col-md-4 bio">
               <div > 
                 Full stack web developer with a background in the music
                 business. Successfully managed tours for a Sony artist providing
@@ -26,7 +25,7 @@ export default function About() {
                 <Projects />
               </button>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5 ">
               <img
                 src={process.env.PUBLIC_URL + "/images/professional_pic.JPG"}
                 className="propic img-fluid "
@@ -35,7 +34,6 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

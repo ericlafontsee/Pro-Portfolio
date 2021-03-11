@@ -1,11 +1,7 @@
-.Contact {
+.contact {
   font-family: sans-serif;
-  text-align: right;
   height: 100%;
-  /* max-width: 500px;
-  position: absolute;
-  top: -75px;
-  right: -100px; */
+  z-index: 800;
 }
 
 .contactForm{
@@ -22,14 +18,15 @@ input {
   margin: 10px;
 }
 
-button {
-  height: 40px;
+#contactBtn {
+  height: 10%;
   border: none;
-  width: 100px;
-  line-height: 1;
+  width: 80%;
   cursor: pointer;
   color: white;
   background:none;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 button:active {

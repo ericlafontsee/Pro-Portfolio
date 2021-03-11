@@ -5,9 +5,13 @@ import Contact from "../Contact";
 function Header() {
   return (
     <header id="header" className="container-fluid">
-      <div className="d-flex flex-row">
+      <div className="row">
+        <div className="col-md-10">
           <h1>Eric LaFontsee</h1>
+        </div>
+        <div className="col-md-2">
           <Contact />
+        </div>
       </div>
     </header>
   );
