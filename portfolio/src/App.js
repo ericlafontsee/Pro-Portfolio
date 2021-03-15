@@ -1,16 +1,15 @@
 import React from "react";
 import Home from "./pages/Home";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Switch>
-    //     <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-    //   </Switch>
-    // </BrowserRouter>
+ 
     <>
+    <Header/>
     <Home/>
+    <Footer />
     </>
   );
 }

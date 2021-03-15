@@ -1,16 +1,16 @@
 #testimonials {
-  background: rgba(0, 0, 0, 0.1);
-  min-height: 200px;
   line-height: 100%;
   font-family: cursive;
-  font-size: 20pt;
+  font-size: 12pt;
+  padding-bottom: 150px;
+  
   /* background: #979796; */
 
   /* clip-path: polygon(0% 0%, 300% 0%, 0% 70%, 0% 100%); */
 }
 
 blockquote{
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin-bottom: 100px;
+  max-width: 500px;
 }

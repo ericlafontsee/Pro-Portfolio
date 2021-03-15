@@ -1,21 +1,17 @@
 #about {
   /* background: #979796; */
   padding-bottom: 150px;
-
 }
 
 
-button.projects{
-  background:#080809;
 
-}
 
 .propic {
   border-radius: 50%;
-  /* margin: 0 auto; */
-  /* justify-content: center !important; */
   width: 50%;
   height: auto;
+
+  /* margin: 0 auto; */
 }
 
 .bio {
@@ -27,3 +23,18 @@ button.projects{
   color: white;
   line-height: 200%;
 }
+
+/* .main > div {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Kanit, sans-serif;
+  font-weight: 800;
+  font-size: 10em;
+  will-change: transform, opacity;
+} */

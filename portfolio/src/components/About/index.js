@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Projects from "../Projects";
 
 export default function About() {
   return (
@@ -21,11 +20,8 @@ export default function About() {
                 combined with diligence makes me a reliable and successful team
                 member.
               </div>
-              <button className="">
-                <Projects />
-              </button>
             </div>
-            <div className="col-md-5 ">
+            <div className="col-md-4 ">
               <img
                 src={process.env.PUBLIC_URL + "/images/professional_pic.JPG"}
                 className="propic img-fluid "

@@ -65,7 +65,7 @@ export default function Projects() {
               color: "white",
               maxWidth: "100px",
               maxHeight: "75px",
-              width: '100%',
+              width: '200px',
               height: '100%',
               zIndex: 134,
               position: 'absolute',
