@@ -6,15 +6,16 @@ import "./style.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Transition, animated } from "react-spring/renderprops";
 
+
 const pages = [
   (style) => (
-    <animated.div style={{ ...style,  }}>A</animated.div>
+    <animated.div style={{ ...style,  }}><About/></animated.div>
   ),
   (style) => (
-    <animated.div style={{ ...style,  }}>B</animated.div>
+    <animated.div style={{ ...style,  }}><Projects/></animated.div>
   ),
   (style) => (
-    <animated.div style={{ ...style,  }}>C</animated.div>
+    <animated.div style={{ ...style,  }}><Testimonials/></animated.div>
   )
 ];
 
@@ -23,7 +24,6 @@ function Home() {
   const [index, setIndex] = useState(0);
   const toggle = () =>{
     index === 2 ? setIndex(0) : setIndex(index + 1);
-    
   }
 
   return (
