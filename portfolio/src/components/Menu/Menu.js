@@ -15,10 +15,10 @@ const Menu = ({ open, ...props }) => {
       <a href="/" tabIndex={tabIndex}>
         About
       </a>
-      <a href="/" tabIndex={tabIndex}>
-        Portfolio
+      <a href="/projects" tabIndex={tabIndex}>
+        Projects
         </a>
-      <a href="/" tabIndex={tabIndex}>
+      <a href="/contact" tabIndex={tabIndex}>
        Contact
         </a>
     </StyledMenu>

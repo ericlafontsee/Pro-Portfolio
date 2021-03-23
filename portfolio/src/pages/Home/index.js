@@ -28,7 +28,7 @@ function Home() {
 
   return (
     <>
-          <div className="main container-fluid mainContent" onClick={toggle}>
+          {/* <div className="main container-fluid mainContent" onClick={toggle}>
         <Transition
           native
           reset
@@ -40,8 +40,8 @@ function Home() {
         >
           {(index) => pages[index]}
         </Transition>
-      </div>
-      {/* <BrowserRouter>
+      </div> */}
+      <BrowserRouter>
         <div className="container-fluid mainContent">
           <Switch>
             <Route exact path={"/"} component={About} />
@@ -49,7 +49,7 @@ function Home() {
             <Route exact path={"/resume"} component={Testimonials} />
           </Switch>
         </div>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
       ///////
       {/* <div className="container-fluid mainContent">
