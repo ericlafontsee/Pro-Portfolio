@@ -5,13 +5,18 @@ import Flipcard from "../../components/Flipcard";
 import "./style.css";
 
 export default function Projects() {
-
   return (
     <>
-      <div id="projects">
-        {data.map((item, key) => {
-          return <Flipcard {...item} />;
-        })}
+      <div className="projects container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="d-flex flex-wrap justify-content-space-evenly">
+              {data.map((item, key) => {
+                return <Flipcard {...item} />;
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

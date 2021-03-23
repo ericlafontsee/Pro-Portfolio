@@ -1,28 +1,4 @@
-#projects {
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(100px, 1fr));
-  grid-gap: 25px;
-  padding: 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.05);
-}
-
-#flip{
-  width: 100%;
+.projects {
   height: 100%;
-  background: rgba(0,0,0,0);
-  overflow: hidden;
-  border-radius: 5px;
+
 }
-/* 
-#projectPic {
-  border: 2px solid #556270;
-  border-radius: 2%;
-  margin: 0;
-  width: 100%;
-  height: auto;
-} */
