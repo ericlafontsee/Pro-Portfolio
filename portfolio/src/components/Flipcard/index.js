@@ -15,7 +15,11 @@ function Flipcard(props) {
         className="c front"
         style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}
       >
-        <img className="img-fluid mx-auto" src={process.env.PUBLIC_URL + props.image} alt={props.name} />
+        <img
+          className="img-fluid mx-auto"
+          src={process.env.PUBLIC_URL + props.image}
+          alt={props.name}
+        />
       </animated.div>
 
       <animated.div
@@ -25,14 +29,17 @@ function Flipcard(props) {
           transform: transform.interpolate((t) => `${t} rotateX(180deg)`)
         }}
       >
-        <h3 id="appName">{props.name}</h3>
+        <div id="appName">{props.name}</div>
         <p id="appDesc">{props.description}</p>
-        <a href={props.GitHub} target="_blank">
-          <button id="github">Github</button>
-        </a>
-        <a href={props.Deployed} target="_blank">
-          <button id="deployed">Deployed</button>
-        </a>
+        <div className="links mx-auto">
+          <a id="github" href={props.GitHub} target="_blank">
+            Github
+          </a>
+          <span id="bar"> | </span>
+          <a id="deployed" href={props.Deployed} target="_blank">
+            Deployed
+          </a>
+        </div>
       </animated.div>
     </div>
   );

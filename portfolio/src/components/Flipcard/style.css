@@ -32,37 +32,39 @@ width: 100%;
 
  #appName {
   text-align: center;
-  height: 20px;
+  font-size: 20pt;
   width: 100%;
   margin: 0 auto;
 } 
 
 #appDesc {
-  /* font-size: 15pt; */
   text-align: center;
   width: 80%;
   margin: 20px auto;
-  /* padding: 0; */
   position: relative;
   top: 0;
 }
 
 
-#github {
-  color: black;
-  border: 2px outset #556270;
-  border-radius: 2%;
-  min-height: 50px;
-  min-width: 100px;
+.links{
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ right: 50%;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-#deployed {
-  color: black;
-  border: 2px solid #556270;
-  border-radius: 2%;
-  min-height: 50px;
-  min-width: 100px;
 
-}  
+#github, #deployed, #bar{
+  color: white;
+  font-size: 16pt;
+}
+
+#bar{
+  margin: 0 20px;
+}
 
 
 
