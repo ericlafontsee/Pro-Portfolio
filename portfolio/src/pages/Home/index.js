@@ -28,7 +28,7 @@ function Home() {
 
   return (
     <>
-          <div className="main ontainer-fluid mainContent" onClick={toggle}>
+          <div className="main container-fluid mainContent" onClick={toggle}>
         <Transition
           native
           reset
