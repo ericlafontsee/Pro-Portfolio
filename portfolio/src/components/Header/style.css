@@ -13,4 +13,12 @@ h1 {
   color: white;
 }
 
+.logo{
+  padding: 0  !important;
+ margin-top: 10px;
+
+  width: 20%;
+  height: auto;
+}
+
 

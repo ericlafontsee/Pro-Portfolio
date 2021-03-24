@@ -27,6 +27,8 @@ width: 100%;
   overflow: hidden;
   color: white;
   margin: 0 auto;
+  overflow: scroll;
+
 } 
 
 
@@ -55,6 +57,7 @@ width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  overflow: scroll;
 }
 
 #github, #deployed, #bar{

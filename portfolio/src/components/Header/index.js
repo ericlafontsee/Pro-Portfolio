@@ -8,7 +8,11 @@ function Header() {
     <header id="header" className="container-fluid">
       <div className="row">
         <div className="col-md-10">
-                  <h1>Eric LaFontsee</h1>
+        <img
+          className=" img logo"
+          src={process.env.PUBLIC_URL + "/images/logo.png"}
+          alt={'logo'}
+        />
         </div>
         <div className="col-md-2">
           <Navbar/>
