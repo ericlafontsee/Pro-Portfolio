@@ -23,6 +23,9 @@ function Home() {
             <Route exact path={"/resume"} component={Testimonials} />
           </Switch>
         </div>
+        <div className="container-fluid polygon">
+
+        </div>
       </BrowserRouter>
 
     </>

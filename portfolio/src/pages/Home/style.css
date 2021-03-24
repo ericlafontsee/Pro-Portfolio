@@ -5,30 +5,38 @@ body,
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   user-select: none;
   background: #f0f0f0;
 }
 
-#root > div {
+/* #root > div {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-#root {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  /* overflow: scroll; */
-}
 
 div.mainContent{
-  padding-bottom: 100px;
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  margin-bottom: 0;
   background: linear-gradient(to bottom, #2e2e2c, #492527);
-  clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
+  /* clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%); */
   overflow: scroll;
+}
+
+div.polygon{
+  border: none !important;
+  padding: 0 !important;
+  margin-top: -5px !important;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background: #492527;
+  clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
 }
 
